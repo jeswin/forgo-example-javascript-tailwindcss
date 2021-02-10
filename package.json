@@ -1,0 +1,25 @@
+{
+  "name": "forgo-examples",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "forgo": "^0.0.60",
+    "forgo-powertoys": "^0.0.2",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-react-jsx": "^7.12.13",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^4.5.1",
+    "tailwindcss-cli": "^0.1.2",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "start": "tailwindcss-cli build ./src/styles.css -o ./dist/styles.css && npx webpack serve",
+    "start-todos": "tailwindcss-cli build ./src/styles.css -o ./dist/styles.css && npx webpack build"
+  },
+  "license": "MIT"
+}
